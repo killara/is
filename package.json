@@ -1,6 +1,6 @@
 {
   "name": "@killara/is",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "is's a helper",
   "main": "index.js",
   "scripts": {
