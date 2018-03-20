@@ -1,3 +1,12 @@
 const is = require('.');
 
-console.log(is.array(['is']));
+var a = [];
+function f() {}
+function *g() {}
+var h = {}
+
+console.log(is.array(a));
+console.log(is.function(f));
+console.log(is.function(g));
+console.log(!is.function(h));
+
