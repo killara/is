@@ -2,6 +2,11 @@
 
 exports.array = Array.isArray;
 
-exports.function = f => typeof f === 'function';
+exports.function = arg => typeof arg === 'function';
+exports.func = exports.function;
 
-exports.boolean = exports.bool = b => typeof b === 'boolean';
+exports.boolean = arg => typeof arg === 'boolean';
+exports.bool = exports.boolean;
+
+exports.undefined = arg => arg === undefined;
+exports.undef = exports.undefined;
