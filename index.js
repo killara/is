@@ -10,3 +10,7 @@ exports.bool = exports.boolean;
 
 exports.undefined = arg => arg === undefined;
 exports.undef = exports.undefined;
+
+exports.NaN = Number.isNaN;
+
+exports.Finite = Number.isFinite

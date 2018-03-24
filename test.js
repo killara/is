@@ -15,4 +15,5 @@ console.log(is.function(f));
 console.log(is.function(g));
 console.log(!is.function(h));
 console.log(is.undefined(un));
-
+console.log(is.NaN(parseInt('a')));
+console.log(!is.Finite(1/0))
