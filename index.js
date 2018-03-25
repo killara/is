@@ -2,6 +2,10 @@
 
 exports.array = Array.isArray;
 
+exports.string = arg => typeof arg === 'string';
+
+exports.symbol = arg => typeof arg === 'symbol';
+
 exports.function = arg => typeof arg === 'function';
 exports.func = exports.function;
 
@@ -14,3 +18,16 @@ exports.undef = exports.undefined;
 exports.NaN = Number.isNaN;
 
 exports.Finite = Number.isFinite
+
+exports.number = arg => typeof arg === 'number';
+
+exports.null = arg => arg === null;
+
+const toString = arg => Object.prototype.toString.call(arg);
+
+exports.regexp = arg => toString(arg) === '[object RegExp]';
+exports.date = arg => toString(arg) === '[object Date]';
+exports.error = arg => toString(arg) === '[object Error]';
+exports.object = arg => typeof arg === 'object' && arg !== null;
+exports.buffer = Buffer.isBuffer;
+
