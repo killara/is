@@ -31,3 +31,12 @@ exports.error = arg => toString(arg) === '[object Error]';
 exports.object = arg => typeof arg === 'object' && arg !== null;
 exports.buffer = Buffer.isBuffer;
 
+
+exports.primitive = arg => {
+  return arg === null       ||
+  typeof arg === 'boolean'  ||
+  typeof arg === 'number'   ||
+  typeof arg === 'string'   ||
+  typeof arg === 'symbol'   ||
+  typeof arg === 'undefined'
+}
