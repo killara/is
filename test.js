@@ -16,7 +16,7 @@ assert.strictEqual(is.undefined(undefined), true);
 
 assert.strictEqual(is.NaN(NaN), true);
 
-assert.strictEqual(is.Finite(Infinity), false);
+assert.strictEqual(is.finite(Infinity), false);
 
 assert.strictEqual(is.number(1.1), true);
 

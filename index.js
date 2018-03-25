@@ -16,8 +16,9 @@ exports.undefined = arg => arg === undefined;
 exports.undef = exports.undefined;
 
 exports.NaN = Number.isNaN;
+exports.nan = exports.NaN;
 
-exports.Finite = Number.isFinite
+exports.finite = Number.isFinite
 
 exports.number = arg => typeof arg === 'number';
 
