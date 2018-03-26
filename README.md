@@ -36,3 +36,5 @@ if (is.func(() => {})) {
 * is.object
 * is.buffer
 * is.primitive
+
+* is.alphanum (alias is.alphanumeric)
