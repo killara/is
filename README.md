@@ -1,5 +1,7 @@
 # is
 
+[![jest](https://facebook.github.io/jest/img/jest-badge.svg)](https://github.com/facebook/jest)
+
 is's a helper for Javascript
 
 ## Install
