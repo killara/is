@@ -39,3 +39,9 @@ assert.strictEqual(is.primitive(0), true);
 assert.strictEqual(is.primitive(undefined), true);
 assert.strictEqual(is.primitive(true), true);
 assert.strictEqual(is.primitive(Symbol()), true);
+
+assert.strictEqual(is.alphanum(1), true);
+assert.strictEqual(is.alphanum(''), false);
+assert.strictEqual(is.alphanum('1'), true);
+assert.strictEqual(is.alphanum('1abc'), true);
+assert.strictEqual(is.alphanum('1%'), false);

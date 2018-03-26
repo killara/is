@@ -41,3 +41,6 @@ exports.primitive = arg => {
   typeof arg === 'symbol'   ||
   typeof arg === 'undefined'
 }
+
+exports.alphanum = arg => /^[1-9a-z]+$/i.test(arg);
+exports.alphanumeric = exports.alphanum;
