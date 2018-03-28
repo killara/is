@@ -84,3 +84,9 @@ test('is.alphanum', () => {
   expect(is.alphanum('1a')).toBe(true)
   expect(is.alphanum('1%')).toBe(false)
 })
+
+test('is.validPhoneNumber', () => {
+  expect(is.validPhoneNumber('15200000000')).toBe(true)
+  expect(is.validPhoneNumber('1520000000')).toBe(false)
+  expect(is.validPhoneNumber('2520000000')).toBe(false)
+})

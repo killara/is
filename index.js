@@ -1,5 +1,7 @@
 'use strict';
 
+const zawu = require('zawu');
+
 exports.array = Array.isArray;
 
 exports.string = arg => typeof arg === 'string';
@@ -44,3 +46,6 @@ exports.primitive = arg => {
 
 exports.alphanum = arg => /^[1-9a-z]+$/i.test(arg);
 exports.alphanumeric = exports.alphanum;
+
+/* other helper */
+exports.validPhoneNumber = zawu.isValidPhoneNumber
