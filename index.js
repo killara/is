@@ -20,7 +20,7 @@ exports.undef = exports.undefined;
 exports.NaN = Number.isNaN;
 exports.nan = exports.NaN;
 
-exports.finite = Number.isFinite
+exports.finite = Number.isFinite;
 
 exports.number = arg => typeof arg === 'number';
 
@@ -36,16 +36,16 @@ exports.buffer = Buffer.isBuffer;
 
 
 exports.primitive = arg => {
-  return arg === null       ||
-  typeof arg === 'boolean'  ||
-  typeof arg === 'number'   ||
-  typeof arg === 'string'   ||
-  typeof arg === 'symbol'   ||
-  typeof arg === 'undefined'
-}
+  return arg === null ||
+  typeof arg === 'boolean' ||
+  typeof arg === 'number' ||
+  typeof arg === 'string' ||
+  typeof arg === 'symbol' ||
+  typeof arg === 'undefined';
+};
 
 exports.alphanum = arg => /^[1-9a-z]+$/i.test(arg);
 exports.alphanumeric = exports.alphanum;
 
 /* other helper */
-exports.validPhoneNumber = zawu.isValidPhoneNumber
+exports.validPhoneNumber = zawu.isValidPhoneNumber;
